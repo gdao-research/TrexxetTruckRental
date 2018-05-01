@@ -24,7 +24,7 @@ In **Data** folder
 ## User Interface and Advanced SQL
 ### Normal User
 &nbsp;&nbsp;&nbsp;&nbsp;Home page. Customer can choose to Sign Up or Login<br>
-<center>![HomePage](./imgs/homepage.png)</center><br>
+<center>![HomePage](./imgs/homepage.png?raw=true)</center><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Register page. Customer is required to input fields<br>
 <center>![RegisterPge](./imgs/register.png)</center><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Login page. Login using username and password<br>
