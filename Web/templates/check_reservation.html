@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Reservation Record</h1>
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>Reservation ID</th>
+      <th>VIN</th>
+      <th>From Location</th>
+      <th>To Location</th>
+      <th>From Date</th>
+      <th>To Date</th>
+      <th>Rent Time (in minute)</th>
+    </tr>
+    {% for r in res %}
+      <tr>
+        <td>{{r.reservationID}}</td>
+        <td>{{r.Truck_VIN}}</td>
+        <td>{{r.fromLocation}}</td>
+        <td>{{r.toLocation}}</td>
+        <td>{{r.fromDate}}</td>
+        <td>{{r.toDate}}</td>
+        <td>{{r.rentMinutes}}</td>
+      </tr>
+    {% endfor %}
+  </table>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Truck Management</h1>
+  <a class="btn btn-success" href='/add_truck'>Add Truck</a>
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>VIN</th>
+      <th>Available</th>
+      <th>Location</th>
+    </tr>
+    {% for t in truc %}
+      <tr>
+        <td>{{t.VIN}}</td>
+        <td>{{t.isAvailableBool}}</td>
+        <td>{{t.truckLocation}}</td>
+        <td>
+
+            <form action="{{url_for('delete_truck', id=[t.VIN, t.rm])}}" method="post">
+              <input type="hidden" name="_method" value="DELETE">
+              <input type="submit" value={{t.rm}} class="{{t.value}}">
+            </form>
+        </td>
+        <td><a href="edit_truck/{{t.VIN}}" class="btn btn-warning">Edit</a></td>
+      </tr>
+    {% endfor %}
+  </table>
+
+{% endblock %}

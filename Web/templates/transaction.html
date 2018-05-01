@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Transaction <small>{{session.username}}</small></h1>
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>Pay ID</th>
+      <th>Reservation ID</th>
+      <th>amount</th>
+    </tr>
+    {% for t in trans %}
+      <tr>
+        <td>{{t.payID}}</td>
+        <td>{{t.Reservation_reservationID}}</td>
+        <td>{{t.amount}}</td>
+      </tr>
+    {% endfor %}
+  </table>
+
+{% endblock %}
