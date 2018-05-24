@@ -10,7 +10,10 @@ flask_mysqldb<br>
 wtforms
 
 ## How to use
-Go to Web folder and run **python app.py**
+Go to Web folder and run 
+```bash
+python app.py
+```
 
 ## Business Rule
 * The project illustrates an interactive web service between Customer and the company.
