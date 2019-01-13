@@ -12,6 +12,7 @@ wtforms
 ## How to use
 Go to Web folder and run 
 ```bash
+cd Web
 python app.py
 ```
 
